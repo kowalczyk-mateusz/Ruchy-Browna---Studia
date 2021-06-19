@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruchy Browna - Projekt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="d3.min.js"></script>
+    <script src="d3-force-surface.min.js"></script>
+    <script src="d3-force-bounce.min.js"></script>
+    <script src='app.js' defer></script>
+</head>
+<body>
+
+    <h1>Zadanie 10 - RUCHY BROWNA</h1>
+    <h2>Mateusz Kowalczyk</h2>
+    Temperature:
+    <input id='temperature-control' type='range' min='1' mmax='50' step='1' value='10' oninput='onTemperatureChange(this.value)'>
+    
+    <span id='temperature-val'>10</span>
+    <button id='reset'>Resetuj droge cząsteczki</button>
+
+    <div class="content">
+        <div style='position:relative'>
+            <svg id='canvas'></svg>
+                <canvas id='historical' style='position: absolute; left: 0; top: 0; z-index: 1'></canvas>
+            </div>
+            <div class="values">
+                <div class="roznica">
+                    
+                </div>
+                <div class="val">
+                </div>
+            </div>
+    </div>
+</body>
+</html>
